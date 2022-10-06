@@ -26,7 +26,21 @@
     });
     render();
   };
+  const bindEvents = () => {
+    const removeButtons = document.querySelectorAll(".js-remove");
+    removeButtons.forEach((removeButton, index) => {
+      removeButton.addEventListener("click", () => {
+        removeTask(index);
+      });
+    });
 
+    const doneButtons = document.querySelectorAll(".js-done");
+    doneButtons.forEach((doneButton, index) => {
+      doneButton.addEventListener("click", () => {
+        doneTask(index);
+      });
+    });
+  };
   const render = () => {
     let htmlString = "";
     for (const task of tasks) {
@@ -42,19 +56,7 @@
     }
     document.querySelector(".js-tasks").innerHTML = htmlString;
 
-    const removeButtons = document.querySelectorAll(".js-remove");
-    removeButtons.forEach((removeButton, index) => {
-      removeButton.addEventListener("click", () => {
-        removeTask(index);
-      });
-    });
-
-    const doneButtons = document.querySelectorAll(".js-done");
-    doneButtons.forEach((doneButton, index) => {
-      doneButton.addEventListener("click", () => {
-        doneTask(index);
-      });
-    });
+    bindEvents();
   };
 
   const onFormSubmit = (event) => {

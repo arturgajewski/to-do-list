@@ -1,0 +1,109 @@
+.form {
+  max-width: 1000px;
+  margin: auto;
+  font-family: "Lato", sans-serif;
+}
+
+.form__fieldset {
+  background-color: #ffffff;
+  color: #222;
+  font-family: "Lato", sans-serif;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 22px #c9c9c9;
+  border-bottom: 3px solid teal;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.form__fieldset--legend {
+  background-color: teal;
+  border-radius: 15px;
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  border-bottom: 3px solid rgb(1, 93, 93);
+  color: #fff;
+}
+
+.form__legend--star {
+  color: red;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.form__label {
+  padding: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  border-bottom: 3px solid teal;
+  margin-bottom: 30px;
+}
+
+.form__input {
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  border-style: none;
+  border-bottom: 2px solid teal;
+}
+
+.button__addNewTask {
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  background-color: teal;
+  border-radius: 10px;
+  border-style: none;
+  color: #fff;
+}
+
+.button__addNewTask:hover {
+  background-color: hsla(180, 100%, 25%, 0.832);
+}
+
+.button__done {
+  border: 1px solid rgb(4, 142, 4);
+  border-radius: 50%;
+  background-color: rgb(2, 175, 2);
+  margin: 10px;
+  margin-right: 5px;
+}
+
+.icon__done {
+  width: 16px;
+  height: 16px;
+  margin: 5px;
+}
+
+.task {
+  color: #222;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.task__done {
+  text-decoration: line-through;
+  color: red;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.button__remove {
+  border: 1px solid rgb(174, 3, 3);
+  border-radius: 50%;
+  background-color: rgb(210, 3, 3);
+  margin: 5px;
+}
+
+.icon__trush {
+  width: 16px;
+  height: 16px;
+  margin: 5px;
+}

@@ -2,6 +2,8 @@
   max-width: 1000px;
   margin: auto;
   font-family: "Lato", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .form__fieldset {
@@ -106,4 +108,8 @@
   width: 16px;
   height: 16px;
   margin: 5px;
+}
+
+.list__tasks {
+    margin-top: 10px;
 }

@@ -1,13 +1,6 @@
 {
   const tasks = [
-    {
-      content: "odrobić zadanie domowe",
-      done: false,
-    },
-    {
-      content: "wysłać pracę domową na slack",
-      done: true,
-    },
+
   ];
 
   const removeTask = (taskIndex) => {
@@ -64,6 +57,7 @@
 
     const newTaskContent = document.querySelector(".js-newTask").value.trim();
     if (newTaskContent === "") {
+      newTaskContent.focus();
       return;
     }
     addNewTasks(newTaskContent);
@@ -73,8 +67,9 @@
     render();
 
     const form = document.querySelector(".js-form");
-
+    
     form.addEventListener("submit", onFormSubmit);
+   
   };
   init();
 }

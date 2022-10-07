@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,29 +21,37 @@
 
 <body class="body">
     <form class="js-form">
-
-
-    <p>
+        <h1> Lista zadań</h1>
         <fieldset class="form__fieldset">
-            <legend class="form__fieldset--legend">
-                Lista zadań do wykonania
-            </legend>
-            </p>
-            <p class="form__legend--paragraph">
-                Stwórz swoją listę zadań,żeby o niczym nie zapomieć <span class="form__legend--star">*</span>.
-            </p>
+            <label>
+                <h2 class="form__fieldset--legend">
+                    Dodaj nowe zadanie
+                </h2>
+            </label>
+
         </fieldset>
         <fieldset class="form__fieldset">
-            <legend class="form__fieldset--legend">Lista zadań</legend>
-            <p>
-                <label class="form__label">
-                    Nazwa zadania<span class="form__legend--star">*</span>: <input class="form__input js-newTask" name="task"
-                        placeholder="nazwa zadania" value="" autofocus minlength="2" required>
-                </label>
+            <label class="form__label">
+                Nazwa zadania<span class="form__legend--star">*</span>: <input class="form__input js-newTask"
+                    name="task" placeholder="nazwa zadania" value="" autofocus minlength="2" required>
+            </label>
             </p>
             <button class="button__addNewTask js-button">Dodaj zadanie</button>
-        </form>
+        </fieldset>
+        <fieldset class="form__fieldset">
+            <label>
+                <h2 class="form__fieldset--legend">
+                    Lista zadań
+                </h2>
+            </label>
+</fieldset>
+    </form>
+    <fieldset class="form__fieldset">
+        <label>
             <ul class="list__tasks js-tasks"> </ul>
+        </label>
+  </fieldset>
+  
 </body>
 
 </html>

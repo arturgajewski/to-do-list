@@ -39,9 +39,11 @@
         <li 
         class="task ${task.done ? " task__done" : ""}"
         >
-        <button class="button__done js-done">  <img src="images/icon_done.png" class="icon__done"> </button>
-        <button class="button__remove js-remove"> <img src="images/icon_trush.png" class="icon__trush"></button>
-                   ${task.content}
+        <button class="button__done js-done"> ${task.done ? "✓" : ""} </button>
+        ${task.content}
+        <button class="button__remove js-remove"> <img src="images/icon_trush.png" class="icon__trush">
+        </button>
+                  
         </li>
         `;
     }
@@ -55,7 +57,6 @@
 
     const newTaskContent = document.querySelector(".js-newTask").value.trim();
     if (newTaskContent === "") {
-      newTaskContent.focus();
       return;
     }
     addNewTasks(newTaskContent);
@@ -66,8 +67,7 @@
 
     const form = document.querySelector(".js-form");
 
-    form.addEventListener("submit", onFormSubmit); 
-    
+    form.addEventListener("submit", onFormSubmit);
   };
   init();
 }

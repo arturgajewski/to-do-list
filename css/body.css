@@ -10,7 +10,7 @@ html {
   }
   
   .body {
-    background-color: #fff;
+    background-color: rgb(203, 203, 203);
     max-width: 1000px;
     margin: auto;
     font-family: "Lato", sans-serif;

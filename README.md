@@ -1,8 +1,8 @@
- - [DEMO](https://github.com/arturgajewski/currency-converter#demo-website)
- - [PREVIEW](https://github.com/arturgajewski/currency-converter#preview)
- - [HOWITWORK](https://github.com/arturgajewski/currency-converter#how-it-work)
- - [USED TECHNOLOGIES](https://github.com/arturgajewski/currency-converter#used-technologies)
- - [AUTHOR](https://github.com/arturgajewski/currency-converter#author)
+ - [DEMO](https://github.com/arturgajewski/to-do-list/tree/main#demo-website)
+ - [PREVIEW](https://github.com/arturgajewski/to-do-list/tree/main#preview)
+ - [HOWITWORK](https://github.com/arturgajewski/to-do-list/tree/main#how-it-work)
+ - [USED TECHNOLOGIES](https://github.com/arturgajewski/to-do-list/tree/main#used-technologies)
+ - [AUTHOR](https://github.com/arturgajewski/to-do-list/tree/main#author)
 
 # Welcome in My List 
 ![This is my first a list for people who often forget a lot of things to do and  for learning javasrcipt with you-code.pl](https://raw.githubusercontent.com/arturgajewski/to-do-list/main/images/my_list.png)

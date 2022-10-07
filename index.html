@@ -21,37 +21,32 @@
 
 <body class="body">
     <form class="js-form">
-        <h1> Lista zadań</h1>
+        <h1 class="form__header"> Lista zadań</h1>
         <fieldset class="form__fieldset">
-            <label>
-                <h2 class="form__fieldset--legend">
-                    Dodaj nowe zadanie
-                </h2>
-            </label>
 
-        </fieldset>
-        <fieldset class="form__fieldset">
             <label class="form__label">
-                Nazwa zadania<span class="form__legend--star">*</span>: <input class="form__input js-newTask"
-                    name="task" placeholder="nazwa zadania" value="" autofocus minlength="2" required>
+            Dodaj nowe zadanie
             </label>
+        </fieldset>
+    
+        <fieldset class="form__fieldset">
+
             </p>
-            <button class="button__addNewTask js-button">Dodaj zadanie</button>
+            <p class="form__legend--paragraph">
+                <input class="form__input js-newTask" name="task" placeholder="nazwa zadania" autofocus minlength="2"
+                    required>
+                <button class="button__addNewTask js-button">Dodaj zadanie</button>
+            </p>
         </fieldset>
         <fieldset class="form__fieldset">
-            <label>
-                <h2 class="form__fieldset--legend">
-                    Lista zadań
-                </h2>
-            </label>
-</fieldset>
+            <p>
+                <label class="form__label">
+                    Twoje zadania
+                </label>
+            </p>
     </form>
-    <fieldset class="form__fieldset">
-        <label>
-            <ul class="list__tasks js-tasks"> </ul>
-        </label>
-  </fieldset>
-  
+    <ul class="list__tasks js-tasks"> </ul>
+    </fieldset>
 </body>
 
 </html>

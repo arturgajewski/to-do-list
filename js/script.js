@@ -1,7 +1,5 @@
 {
-  const tasks = [
-
-  ];
+  const tasks = [];
 
   const removeTask = (taskIndex) => {
     tasks.splice(taskIndex, 1);
@@ -39,7 +37,7 @@
     for (const task of tasks) {
       htmlString += `
         <li 
-        class="task ${task.done ? ' task__done' : ""}"
+        class="task ${task.done ? " task__done" : ""}"
         >
         <button class="button__done js-done">  <img src="images/icon_done.png" class="icon__done"> </button>
         <button class="button__remove js-remove"> <img src="images/icon_trush.png" class="icon__trush"></button>
@@ -67,9 +65,9 @@
     render();
 
     const form = document.querySelector(".js-form");
+
+    form.addEventListener("submit", onFormSubmit); 
     
-    form.addEventListener("submit", onFormSubmit);
-   
   };
   init();
 }

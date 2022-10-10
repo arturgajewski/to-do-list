@@ -11,13 +11,12 @@
   background-color: hsla(180, 100%, 25%, 0.832);
 }
 
-@media ( max-width: 767px) {
-    .button__task--addNewTask{
-        margin-top: 20px;
-    }
-
+@media (max-width: 767px) {
+  .button__task--addNewTask {
+    margin-top: 20px;
+  }
 }
-    
+
 .button__task {
   width: 30px;
   height: 30px;
@@ -33,10 +32,18 @@
   background-color: rgb(2, 175, 2);
 }
 
+.button__task--done:hover {
+  background-color: hsla(120, 98%, 35%, 0.853);
+}
+
 .button__task--remove {
-  background-color: red;
+  background-color: #ff0000;
+}
+
+.button__task--remove:hover {
+  background-color: #ff0000ba;
 }
 
 .button__remove--flex {
-float: right;
+  float: right;
 }

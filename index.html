@@ -17,6 +17,8 @@
     <link href="css/body.css" rel="stylesheet">
     <link href="css/button.css" rel="stylesheet">
     <link href="css/task.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -31,21 +33,24 @@
 
 <body class="body">
     <form class="js-form">
-        <h1 class="form__header"> Lista zadań</h1>
+        <header class="form__header">
+            <h1> Lista zadań</h1>
+        </header>
+<section class="section__addNewTask">
         <fieldset class="form__fieldset">
 
             <label class="form__label">
                 Dodaj nowe zadanie
             </label>
         </fieldset>
-        <fieldset class="form__fieldset">
-            </p>
+        <fieldset class="form__fieldset form__fieldset--addNewTask">
             <p class="form__legend--paragraph">
-                <input class="form__input js-newTask" name="task" placeholder="co mam do zrobienia?" autofocus minlength="2"
-                    required>
+                <input class="form__input js-newTask" name="task" placeholder="co mam do zrobienia?" autofocus
+                    minlength="2" required>
                 <button class="button__task--addNewTask js-button">Dodaj zadanie</button>
             </p>
         </fieldset>
+    </section>
         <fieldset class="form__fieldset">
             <p>
                 <label class="form__label">

@@ -1,0 +1,4 @@
+.section__addNewTask {
+    display: grid;
+    grid-template-columns: 1f auto;
+}

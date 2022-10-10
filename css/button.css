@@ -23,9 +23,8 @@
   border: none;
   padding: 0;
   color: white;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: center;
 }
 
 .button__task--done {
@@ -42,8 +41,4 @@
 
 .button__task--remove:hover {
   background-color: #ff0000ba;
-}
-
-.button__remove--flex {
-  float: right;
 }

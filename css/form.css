@@ -2,12 +2,9 @@
   max-width: 1000px;
   margin: auto;
   font-family: "Lato", sans-serif;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
   flex-wrap: wrap;
-}
-
-.form__header {
-  margin: 15px;
 }
 
 .form__fieldset {
@@ -17,6 +14,7 @@
   margin-top: 5px;
   border: none;
   outline: 1px solid #eaeaea;
+  display: grid;
 }
 
 .form__fieldset--legend {
@@ -28,21 +26,12 @@
   color: #222;
 }
 
-.form__legend--star {
-  color: red;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-}
-
 .form__label {
-  margin-top: 10px;
-  margin-right: 20px;
   font-family: "Lato", sans-serif;
   font-weight: 900;
-  margin-bottom: 10px;
-  display: flex;
-  justify-items: left;
-  align-items: center;
+  display: grid;
+  align-content: center;
+  grid-gap: 10px;
 }
 
 .form__input {
@@ -51,9 +40,8 @@
   font-weight: 300;
   background-color: #ffffff;
   border: 1px solid #c7c7c7;
-  margin-top: 10px;
-  max-width: 600px;
+  max-width: 800px;
   width: 100%;
   align-self: center;
-  margin-right: 15px;
+  margin-right: 5px;
 }

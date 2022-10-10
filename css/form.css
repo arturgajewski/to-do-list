@@ -6,7 +6,7 @@
   flex-wrap: wrap;
 }
 
-.form__header{
+.form__header {
   margin: 15px;
 }
 
@@ -15,8 +15,8 @@
   color: #222;
   font-family: "Lato", sans-serif;
   margin-top: 5px;
-  box-shadow: 2px 2px 22px #c9c9c9;
   border: none;
+  outline: 1px solid #eaeaea;
 }
 
 .form__fieldset--legend {
@@ -35,11 +35,10 @@
 }
 
 .form__label {
-  padding: 20px;
   margin-top: 10px;
   margin-right: 20px;
   font-family: "Lato", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 10px;
   display: flex;
   justify-items: left;
@@ -57,55 +56,4 @@
   width: 100%;
   align-self: center;
   margin-right: 15px;
-}
-
-.button__addNewTask {
-  padding: 10px;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  background-color: teal;
-  border-style: none;
-  color: #fff;
-}
-
-.button__addNewTask:hover {
-  background-color: hsla(180, 100%, 25%, 0.832);
-}
-
-.button__done {
-  border: 1px solid rgb(4, 142, 4);
-  background-color: rgb(2, 175, 2);
-  margin-right: 5px;
-  padding: 12px;
-}
-
-.task {
-  color: #222;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  display: flex;
-  border-bottom: 1px solid #eaeaea;
-  margin-top: 10px;
-  align-items: center;
-  justify-items: center;
-}
-
-.task__done {
-  text-decoration: line-through;
-}
-
-.button__remove {
-  border: 1px solid rgb(174, 3, 3);
-  background-color: rgb(210, 3, 3);
-  margin: 5px;
-}
-
-.icon__trush {
-  width: 13px;
-  height: 13px;
-  margin: 5px;
-}
-
-.list__tasks {
-  margin-top: 10px;
 }

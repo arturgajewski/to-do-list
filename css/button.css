@@ -1,0 +1,42 @@
+.button__task--addNewTask {
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  background-color: teal;
+  border-style: none;
+  color: #fff;
+}
+
+.button__task--addNewTask:hover {
+  background-color: hsla(180, 100%, 25%, 0.832);
+}
+
+@media ( max-width: 767px) {
+    .button__task--addNewTask{
+        margin-top: 20px;
+    }
+
+}
+    
+.button__task {
+  width: 30px;
+  height: 30px;
+  border: none;
+  padding: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__task--done {
+  background-color: rgb(2, 175, 2);
+}
+
+.button__task--remove {
+  background-color: red;
+}
+
+.button__remove--flex {
+float: right;
+}

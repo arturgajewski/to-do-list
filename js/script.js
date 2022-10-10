@@ -52,8 +52,7 @@
           task.done ? "✓" : ""
         } </button>
                 <div class="task">   ${task.content} </div>
-                <button class="button__task button__task--remove js-remove">  🗑
-                </button>
+                <button class="button__task button__task--remove js-remove">  🗑</button>
         </li>
         `;
     }

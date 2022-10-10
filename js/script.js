@@ -45,14 +45,10 @@
     let htmlString = "";
     for (const task of tasks) {
       htmlString += `
-        <li 
-        class="taskContent ${task.done ? " task__done" : ""}"
-        >
-        <button class="button__task button__task--done js-done"> ${
-          task.done ? "✓" : ""
-        } </button>
-                <div class="task">   ${task.content} </div>
-                <button class="button__task button__task--remove js-remove">  🗑</button>
+      <li class="taskContent ${task.done ? " task__done" : ""}">
+        <button class="button__task button__task--done js-done"> ${task.done ? "✓" : ""} </button>
+      <div class="task">   ${task.content} </div>
+        <button class="button__task button__task--remove js-remove">  🗑</button>
         </li>
         `;
     }

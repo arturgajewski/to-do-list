@@ -1,6 +1,13 @@
 {
   const tasks = [
-
+    {
+      content: "odrobić zadanie domowe",
+      done: false,
+    },
+    {
+      content: "wysłać pracę domową na slack",
+      done: true,
+    },
   ];
 
   const removeTask = (taskIndex) => {
@@ -39,11 +46,14 @@
     for (const task of tasks) {
       htmlString += `
         <li 
-        class="task ${task.done ? ' task__done' : ""}"
+        class="taskContent ${task.done ? " task__done" : ""}"
         >
-        <button class="button__done js-done"> ${task.done ? "✓" : ""} </button>
-        <button class="button__remove js-remove"> <img src="images/icon_trush.png" class="icon__trush"></button>
-                   ${task.content}
+        <button class="button__task button__task--done js-done"> ${
+          task.done ? "✓" : ""
+        } </button>
+                <div class="task">   ${task.content} </div>
+                <button class="button__task button__task--remove js-remove">  🗑
+                </button>
         </li>
         `;
     }
@@ -69,9 +79,8 @@
     render();
 
     const form = document.querySelector(".js-form");
-    
+
     form.addEventListener("submit", onFormSubmit);
-   
   };
   init();
 }

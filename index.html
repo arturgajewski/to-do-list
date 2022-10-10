@@ -15,6 +15,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/form.css" rel="stylesheet">
     <link href="css/body.css" rel="stylesheet">
+    <link href="css/button.css" rel="stylesheet">
+    <link href="css/task.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -36,25 +38,32 @@
                 Dodaj nowe zadanie
             </label>
         </fieldset>
-
         <fieldset class="form__fieldset">
-
             </p>
             <p class="form__legend--paragraph">
                 <input class="form__input js-newTask" name="task" placeholder="nazwa zadania" autofocus minlength="2"
                     required>
-                <button class="button__addNewTask js-button">Dodaj zadanie</button>
+                <button class="button__task--addNewTask js-button">Dodaj zadanie</button>
             </p>
         </fieldset>
         <fieldset class="form__fieldset">
             <p>
                 <label class="form__label">
-                    Twoje zadania
+                    Lista zadań
                 </label>
             </p>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--listTask">
+            <p>
+                <label class="form__label">
+                    <ul class="list__tasks js-tasks"> </ul>
+                </label>
+            </p>
+        </fieldset>
     </form>
-    <ul class="list__tasks js-tasks"> </ul>
-    </fieldset>
+
+
+
 </body>
 
 </html>

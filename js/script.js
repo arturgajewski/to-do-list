@@ -1,29 +1,27 @@
 {
-  const tasks = [
-    {
-      content: "odrobić zadanie domowe",
-      done: false,
-    },
-    {
-      content: "wysłać pracę domową na slack",
-      done: true,
-    },
-  ];
+  let tasks = [];
+
+  let hideDoneTasks = false;
 
   const removeTask = (taskIndex) => {
-    tasks.splice(taskIndex, 1);
+    tasks = [
+      ...tasks.slice(0, taskIndex),
+      ...tasks.slice(taskIndex + 1),
+    ];
     render();
   };
 
   const doneTask = (taskIndex) => {
-    tasks[taskIndex].done = !tasks[taskIndex].done;
+    tasks = [
+      ...tasks.slice(0, taskIndex),
+      { ...tasks[taskIndex], done: !tasks[taskIndex].done },
+      ...tasks.slice(taskIndex + 1),
+    ];
     render();
   };
 
   const addNewTasks = (newTaskContent) => {
-    tasks.push({
-      content: newTaskContent,
-    });
+    tasks = [...tasks, { content: newTaskContent }];
     render();
   };
   const bindEvents = () => {
@@ -41,15 +39,17 @@
       });
     });
   };
-  const render = () => {
+
+  const renderTasks = () => {
     let htmlString = "";
     for (const task of tasks) {
       htmlString += `
-      <li class="taskContent ${task.done ? " task__done" : ""}">
+      <li class="taskContent">
+      
         <button class="button__task button__task--done js-done"> 
         ${task.done ? "✓" : ""} 
         </button>
-      <div class="task">  
+      <div class="task${task.done ? " task__done" : ""}">  
        ${task.content} 
        </div>
         <button class="button__task button__task--remove js-remove">
@@ -59,29 +59,39 @@
         `;
     }
     document.querySelector(".js-tasks").innerHTML = htmlString;
+  };
 
+  const renderButtons = () => {};
+
+  const bindButtonsEvents = () => {};
+
+  const render = () => {
+    renderTasks();
+    renderButtons();
     bindEvents();
+    bindButtonsEvents();
   };
+  {
+    const onFormSubmit = (event) => {
+      event.preventDefault();
 
-  const onFormSubmit = (event) => {
-    event.preventDefault();
+      const newTaskElement = document.querySelector(".js-newTask");
+      const newTaskContent = newTaskElement.value.trim();
 
-    const newTaskElement = document.querySelector(".js-newTask");
-    const newTaskContent = newTaskElement.value.trim();
+      if (newTaskContent !== "") {
+        addNewTasks(newTaskContent);
+        newTaskElement.value = "";
+      }
+      newTaskElement.focus();
+    };
 
-    if (newTaskContent !== "") {
-      addNewTasks(newTaskContent);
-      newTaskElement.value = "";
-    }
-    newTaskElement.focus();
-  };
+    const init = () => {
+      render();
 
-  const init = () => {
-    render();
+      const form = document.querySelector(".js-form");
 
-    const form = document.querySelector(".js-form");
-
-    form.addEventListener("submit", onFormSubmit);
-  };
-  init();
+      form.addEventListener("submit", onFormSubmit);
+    };
+    init();
+  }
 }

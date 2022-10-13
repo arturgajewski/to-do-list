@@ -23,7 +23,7 @@ You can add your plan and when you will done you can mark or delete.
 1.  Semantic HTML
 2.  CSS
 3.  BEM convenction
-4.  ES6+
+4.  ES6+ / immutability
 6.  RWD (Media Queries)
 
 ## AUTHOR 

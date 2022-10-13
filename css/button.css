@@ -6,6 +6,7 @@
   border-style: none;
   color: #fff;
   transition: 1s;
+  cursor: pointer;
 }
 
 .button__task--addNewTask:hover {
@@ -36,6 +37,7 @@
   display: grid;
   align-items: center;
   transition: 1s;
+  cursor: pointer;
 }
 
 .button__task--done {

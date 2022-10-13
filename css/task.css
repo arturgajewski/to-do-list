@@ -28,6 +28,7 @@
 
 .hidden__item:hover {
   color: hsl(180, 100%, 35%);
+  cursor: pointer;
 }
 .hidden__item:disabled{
   color:grey;

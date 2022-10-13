@@ -5,15 +5,25 @@
   background-color: teal;
   border-style: none;
   color: #fff;
+  transition: 1s;
 }
 
 .button__task--addNewTask:hover {
   background-color: hsla(180, 100%, 25%, 0.832);
+  transform: scale(1.1);
 }
 
 @media (max-width: 767px) {
   .button__task--addNewTask {
     margin-top: 20px;
+  }
+}
+@media (min-width: 768px){
+  @media (max-width: 952px)
+  {
+    .button__task--addNewTask {
+    margin-top: 20px;
+    }
   }
 }
 

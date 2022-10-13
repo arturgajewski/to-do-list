@@ -17,6 +17,9 @@
 @media (max-width: 767px) {
   .button__task--addNewTask {
     margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
   }
 }
 @media (min-width: 768px){
@@ -24,6 +27,9 @@
   {
     .button__task--addNewTask {
     margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
     }
   }
 }

@@ -22,10 +22,15 @@
   font-weight: 300;
   color: teal;
   transition: 1s;
+  border:none;
+  background-color: #fff;
 }
 
 .hidden__item:hover {
   color: hsl(180, 100%, 35%);
+}
+.hidden__item:disabled{
+  color:grey;
 }
 
 .list__tasks {
@@ -36,4 +41,8 @@
 
 .task__done {
   text-decoration: line-through;
+}
+
+.list__item--hide {
+  display: none;
 }
